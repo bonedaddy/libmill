@@ -38,8 +38,6 @@ libmill_la_SOURCES = \
     cr.c \
     debug.h \
     debug.c \
-    ip.h \
-    ip.c \
     list.h \
     list.c \
     mfork.c \
@@ -49,19 +47,14 @@ libmill_la_SOURCES = \
     slist.c \
     stack.h \
     stack.c \
-    tcp.c \
     timer.h \
     timer.c \
-    udp.c \
     unix.c \
     utils.h \
     poll.inc \
     epoll.inc \
     kqueue.inc \
-    dns/dns.h \
-    dns/dns.c \
-    file.c \
-    ssl.c
+    file.c
 
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = libmill.pc
@@ -89,17 +82,13 @@ check_PROGRAMS = \
     tests/choose\
     tests/sleep\
     tests/fdwait\
-    tests/tcp\
-    tests/udp\
     tests/unix\
     tests/signals\
     tests/overload\
-    tests/ip\
     tests/file\
     tests/mfork1\
     tests/mfork2\
-    tests/mfork3\
-    tests/ssl
+    tests/mfork3
 
 EXTRA_DIST = \
     tests/cert.pem \
@@ -119,22 +108,7 @@ noinst_PROGRAMS += \
     perf/chan\
     perf/chs\
     perf/chr\
-    perf/whispers\
-    perf/c10k
-
-################################################################################
-#  tutorial                                                                    #
-################################################################################
-
-noinst_PROGRAMS += \
-    tutorial/step1 \
-    tutorial/step2 \
-    tutorial/step3 \
-    tutorial/step4 \
-    tutorial/step5 \
-    tutorial/step6 \
-    tutorial/step7 \
-    tutorial/step8
+    perf/whispers
 
 ################################################################################
 #  additional packaging-related stuff                                          #
