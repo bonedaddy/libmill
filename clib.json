@@ -23,6 +23,7 @@
     "timer.c",
     "timer.h",
     "unix.c",
-    "utils.h"
+    "utils.h",
+    "epoll.inc"
   ]
 }
