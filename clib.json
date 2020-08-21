@@ -1,0 +1,28 @@
+{
+  "name": "libmill",
+  "version": "v0.0.1",
+  "src": [
+    "chan.c",
+    "chan.h",
+    "config.h",
+    "cr.c",
+    "cr.h",
+    "debug.c",
+    "debug.h",
+    "file.c",
+    "libmill.h",
+    "list.c",
+    "list.h",
+    "mfork.c",
+    "poller.c",
+    "poller.h",
+    "slist.c",
+    "slist.h",
+    "stack.c",
+    "stack.h",
+    "timer.c",
+    "timer.h",
+    "unix.c",
+    "utils.h"
+  ]
+}
